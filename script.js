@@ -23,5 +23,13 @@ badge.addEventListener("click", function(dets){
 
 	setTimeout(function(){
 		document.querySelector(".full-screen").style.display = "none";
-	}, 3000);
+		document.querySelector("#progress").style.width = "100%";
+	}, 5000);
+	document.querySelector(".full-screen span").style.display = "block";
+});
+
+var span = document.querySelector(".full-screen span");
+span.addEventListener("click", function(){
+	document.querySelector(".full-screen").style.display = "none";
+	this.style.display = "none";
 });
