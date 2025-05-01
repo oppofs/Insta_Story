@@ -32,6 +32,7 @@ body{
 	white-space: nowrap;
 	overflow-x: auto;
 	overflow-y: hidden;
+	cursor: grab;
 }
 .badge::-webkit-scrollbar{
 	display: none;
@@ -59,4 +60,25 @@ body{
 	background-position: center;
 	position: absolute;
 	display: none;
+}
+.full-screen span{
+	position: absolute;
+	font-size: 30px;
+	right: 20px;
+	top: 10px;
+	color: #fff;
+	cursor: context-menu;
+}
+#progress{
+	position: absolute;
+	width: 0%;
+	height: 10px;
+	background-color: #fff;
+	top: 0px;
+	left: 0px;
+	animation: mymove 5s;
+}
+@keyframes mymove {
+  	0% {width: 0%;}
+  	100% {width: 100%;}
 }
